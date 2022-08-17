@@ -21,11 +21,10 @@ const LoginPage = () => {
     return(
     <div id="login">
         <h1 className="title">Login do sistema</h1>
-        <p>{String(authenticated)}</p>
         <form className="form" onSubmit={handleSubmit}>
             <div className="field">
-                <label htmlFor="email">Email</label>
-                <input type="email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                <label htmlFor="email">Login</label>
+                <input type="text" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div className="field">
                 <label htmlFor="password">Senha</label>
